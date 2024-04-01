@@ -1,0 +1,49 @@
+{% extends "base.html" %} 
+
+{% block main %}
+	<div class="prof-container">
+	  <div class="page-wrapper">
+	    <div class="page-header">
+	      <img
+	        src="{{ url_for('static', filename='this.jpg') }}"
+	        alt=""
+	        class="profile-img"
+	      />
+	      <h2 id="my-name">Patrick Bucknor </h2>
+	      <p id="socialmedia">@nowhere</p>
+	      <p>St.Ann, Jamaica</p>
+	      <p>Joined October, 2019 {{ d1 }}</p>
+	    </div>
+	    <div class="page-body">
+	      <p class="page-text">
+	        Help, I am underwater, I am drowning. Please save me. 
+          Why am I doing seven courses and working part time. 
+            
+	      </p>
+	      <div id="social-status">
+	        <ul class="social-med">
+	          <li>
+	            <h3>20</h3>
+	          </li>
+	          <li class="records">Posts</li>
+	        </ul>
+	        <ul class="social-med">
+	          <li>
+	            <h3>97</h3>
+	          </li>
+	          <li class="record">Following</li>
+	        </ul>
+	        <ul class="social-med">
+	          <li>
+	            <h3>-0.1M</h3>
+	          </li>
+	          <li class="record">Followers</li>
+	        </ul>
+	      </div>
+	      <button id="follow">Follow Me</button>
+	    </div>
+	  </div>
+	
+
+	  {% endblock %}
+	</div>
